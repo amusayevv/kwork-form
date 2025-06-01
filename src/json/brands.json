@@ -1,0 +1,68 @@
+{
+"brands": [
+	{
+		"id" : 1,
+		"name" : "Aubess",
+		"country" : null
+	},
+	{
+		"id" : 2,
+		"name" : "PLCOME",
+		"country" : "Китай"
+	},
+	{
+		"id" : 3,
+		"name" : "JIAQISHENG JQS",
+		"country" : "Китай"
+	},
+	{
+		"id" : 4,
+		"name" : "CDEBYTE",
+		"country" : "Китай"
+	},
+	{
+		"id" : 5,
+		"name" : "Aubess",
+		"country" : "Китай"
+	},
+	{
+		"id" : 6,
+		"name" : "XINGKECHUANG",
+		"country" : "Китай"
+	},
+	{
+		"id" : 7,
+		"name" : "Wiren Board",
+		"country" : "Россия"
+	},
+	{
+		"id" : 8,
+		"name" : "eletechsup",
+		"country" : null
+	},
+	{
+		"id" : 9,
+		"name" : "UICPAL",
+		"country" : null
+	},
+	{
+		"id" : 10,
+		"name" : "TZT",
+		"country" : null
+	},
+	{
+		"id" : 11,
+		"name" : "iHseno\r\n",
+		"country" : null
+	},
+	{
+		"id" : 12,
+		"name" : "GLEDOPTO",
+		"country" : null
+	},
+	{
+		"id" : 13,
+		"name" : "Sunworld Technology",
+		"country" : null
+	}
+]}

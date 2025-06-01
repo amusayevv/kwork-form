@@ -1,0 +1,135 @@
+{
+"protocols": [
+	{
+		"id" : 1,
+		"name" : "discret signal TTL",
+		"descriprion" : null,
+		"active" : 0
+	},
+	{
+		"id" : 2,
+		"name" : "discret signal 0\/24",
+		"descriprion" : null,
+		"active" : 0
+	},
+	{
+		"id" : 3,
+		"name" : "usb",
+		"descriprion" : null,
+		"active" : 0
+	},
+	{
+		"id" : 4,
+		"name" : "uart",
+		"descriprion" : null,
+		"active" : 0
+	},
+	{
+		"id" : 5,
+		"name" : "rs 232",
+		"descriprion" : null,
+		"active" : 0
+	},
+	{
+		"id" : 6,
+		"name" : "rs 485",
+		"descriprion" : null,
+		"active" : 0
+	},
+	{
+		"id" : 7,
+		"name" : "modbus rtu",
+		"descriprion" : null,
+		"active" : 1
+	},
+	{
+		"id" : 8,
+		"name" : "modbus tcp",
+		"descriprion" : null,
+		"active" : 0
+	},
+	{
+		"id" : 9,
+		"name" : "knx",
+		"descriprion" : null,
+		"active" : 0
+	},
+	{
+		"id" : 10,
+		"name" : "dali",
+		"descriprion" : null,
+		"active" : 0
+	},
+	{
+		"id" : 11,
+		"name" : "ethernet",
+		"descriprion" : null,
+		"active" : 0
+	},
+	{
+		"id" : 12,
+		"name" : "wifi",
+		"descriprion" : null,
+		"active" : 0
+	},
+	{
+		"id" : 13,
+		"name" : "bluetooth",
+		"descriprion" : null,
+		"active" : 0
+	},
+	{
+		"id" : 14,
+		"name" : "zigbee",
+		"descriprion" : null,
+		"active" : 0
+	},
+	{
+		"id" : 15,
+		"name" : "infrared",
+		"descriprion" : null,
+		"active" : 0
+	},
+	{
+		"id" : 16,
+		"name" : "lora wan",
+		"descriprion" : null,
+		"active" : 0
+	},
+	{
+		"id" : 17,
+		"name" : "1-wire",
+		"descriprion" : null,
+		"active" : 0
+	},
+	{
+		"id" : 18,
+		"name" : "I2C",
+		"descriprion" : null,
+		"active" : 0
+	},
+	{
+		"id" : 19,
+		"name" : "analog signal 4-20 mA",
+		"descriprion" : null,
+		"active" : 0
+	},
+	{
+		"id" : 20,
+		"name" : "analog signal 0-10 V",
+		"descriprion" : null,
+		"active" : 0
+	},
+	{
+		"id" : 21,
+		"name" : "optical net",
+		"descriprion" : null,
+		"active" : 0
+	},
+	{
+		"id" : 22,
+		"name" : "dmx512",
+		"descriprion" : null,
+		"active" : 0
+	}
+]}
