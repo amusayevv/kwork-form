@@ -89,6 +89,10 @@ export default function DeviceFormModal({
     fetch("/src/json/inprotocol2device.json")
       .then((response) => response.json())
       .then((data) => setProtocolsToDevice(data.inprotocol2device));
+
+    fetch("/src/json/brands.json")
+      .then((response) => response.json())
+      .then((data) => setBrands(data.brands));
   }, []);
 
   const getAvailableProtocols = () => {
@@ -108,6 +112,20 @@ export default function DeviceFormModal({
         ? prev.filter((id) => id !== protocolId)
         : [...prev, protocolId],
     );
+  };
+
+  const device = {
+    model: model,
+    Price: price,
+    variation: variation,
+    device_type: deviceType,
+    brand: brand,
+    comment: comment,
+    link: link,
+    description: description,
+    photo: photo,
+    topic: topic,
+    final_device: finalDevice,
   };
 
   return (
@@ -182,13 +200,18 @@ export default function DeviceFormModal({
               <TextInput
                 id="price"
                 type="number"
-                value={price}
+                value={price ?? ""}
                 onChange={(e) => {
-                  const priceToSet: number = parseInt(e.target.value);
-                  if (priceToSet >= 0) setPrice(priceToSet);
+                  const value = e.target.value;
+                  if (value === "") {
+                    setPrice(undefined);
+                  } else {
+                    const priceToSet: number = parseInt(value);
+                    if (priceToSet >= 0) setPrice(priceToSet);
+                  }
                 }}
                 className="[&_input]:rounded-[4px] [&_input]:border [&_input]:border-[#999999] [&_input]:!bg-[#333333]"
-              />
+              />{" "}
             </div>
             <div className="flex flex-col gap-2">
               <Label htmlFor="model">Вариация</Label>
@@ -299,7 +322,21 @@ export default function DeviceFormModal({
         <ModalFooter>
           <Button
             className="rounded-[4px] !bg-[#FFF200] font-bold text-[#333333]"
-            onClick={() => onClose()}
+            onClick={async () => {
+              console.log(JSON.stringify(device));
+              try {
+                await fetch("http://localhost:3000", {
+                  method: "POST",
+                  headers: {
+                    "Content-Type": "application/json",
+                  },
+                  body: JSON.stringify(device),
+                });
+              } catch (e) {
+                console.error("Error:", e);
+              }
+              onClose();
+            }}
           >
             Добавить новое устройство
           </Button>
